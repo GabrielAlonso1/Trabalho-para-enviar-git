@@ -21,12 +21,20 @@ namespace trabalho1
         {
             txtNome.Text = "";
             txtSobrenome.Text = "";
+            txtDataNascimento.Text = "";
+            txtTelefone.Text = "";
+            rdoFeminino.Text = "";
+            rdoMasculino.Text = "";
         }
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
             String nome = txtNome.Text;
             String sobrenome = txtSobrenome.Text;
+            String telefone = txtTelefone.Text;
+            String DataNascimento = txtDataNascimento.Text;
+            String Masculino = rdoMasculino.Text;
+            String Feminino = rdoFeminino.Text;
         }
     }
 }

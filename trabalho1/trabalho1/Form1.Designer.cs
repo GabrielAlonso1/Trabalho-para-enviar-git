@@ -36,9 +36,9 @@
             this.rdoFeminino = new System.Windows.Forms.RadioButton();
             this.btnSalvar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtTelefone = new System.Windows.Forms.TextBox();
             this.lblTelefone = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtDataNascimento = new System.Windows.Forms.TextBox();
             this.lblDataNascimento = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -116,12 +116,12 @@
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
-            // textBox1
+            // txtTelefone
             // 
-            this.textBox1.Location = new System.Drawing.Point(105, 103);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(168, 20);
-            this.textBox1.TabIndex = 9;
+            this.txtTelefone.Location = new System.Drawing.Point(105, 103);
+            this.txtTelefone.Name = "txtTelefone";
+            this.txtTelefone.Size = new System.Drawing.Size(168, 20);
+            this.txtTelefone.TabIndex = 9;
             // 
             // lblTelefone
             // 
@@ -132,12 +132,12 @@
             this.lblTelefone.TabIndex = 8;
             this.lblTelefone.Text = "Telefone";
             // 
-            // textBox2
+            // txtDataNascimento
             // 
-            this.textBox2.Location = new System.Drawing.Point(290, 103);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(168, 20);
-            this.textBox2.TabIndex = 11;
+            this.txtDataNascimento.Location = new System.Drawing.Point(290, 103);
+            this.txtDataNascimento.Name = "txtDataNascimento";
+            this.txtDataNascimento.Size = new System.Drawing.Size(168, 20);
+            this.txtDataNascimento.TabIndex = 11;
             // 
             // lblDataNascimento
             // 
@@ -153,9 +153,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtDataNascimento);
             this.Controls.Add(this.lblDataNascimento);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtTelefone);
             this.Controls.Add(this.lblTelefone);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnSalvar);
@@ -182,9 +182,9 @@
         private System.Windows.Forms.RadioButton rdoFeminino;
         private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.Button btnCancelar;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtTelefone;
         private System.Windows.Forms.Label lblTelefone;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtDataNascimento;
         private System.Windows.Forms.Label lblDataNascimento;
     }
 }
