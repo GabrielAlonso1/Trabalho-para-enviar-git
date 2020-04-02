@@ -28,6 +28,7 @@ namespace trabalho1
             rdoCarro.Text = "";
             rdoMoto.Text = "";
             cmbEstado.SelectedIndex = -1;
+            txtCPF.Text = "";
         }
 
         private void btnSalvar_Click(object sender, EventArgs e)
@@ -41,6 +42,7 @@ namespace trabalho1
             String Carro = rdoCarro.Text;
             String Moto = rdoMoto.Text;
             String Estado = cmbEstado.GetItemText(cmbEstado.SelectedItem);
+            String CPF = txtCPF.Text;
         }
     }
 }

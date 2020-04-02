@@ -45,6 +45,8 @@
             this.rdoCarro = new System.Windows.Forms.RadioButton();
             this.lblEstado = new System.Windows.Forms.Label();
             this.cmbEstado = new System.Windows.Forms.ComboBox();
+            this.txtCPF = new System.Windows.Forms.TextBox();
+            this.lblCPF = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -231,11 +233,29 @@
             this.cmbEstado.Size = new System.Drawing.Size(168, 21);
             this.cmbEstado.TabIndex = 14;
             // 
+            // txtCPF
+            // 
+            this.txtCPF.Location = new System.Drawing.Point(290, 143);
+            this.txtCPF.Name = "txtCPF";
+            this.txtCPF.Size = new System.Drawing.Size(168, 20);
+            this.txtCPF.TabIndex = 16;
+            // 
+            // lblCPF
+            // 
+            this.lblCPF.AutoSize = true;
+            this.lblCPF.Location = new System.Drawing.Point(287, 127);
+            this.lblCPF.Name = "lblCPF";
+            this.lblCPF.Size = new System.Drawing.Size(27, 13);
+            this.lblCPF.TabIndex = 15;
+            this.lblCPF.Text = "CPF";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtCPF);
+            this.Controls.Add(this.lblCPF);
             this.Controls.Add(this.cmbEstado);
             this.Controls.Add(this.lblEstado);
             this.Controls.Add(this.panel1);
@@ -279,6 +299,8 @@
         private System.Windows.Forms.RadioButton rdoCarro;
         private System.Windows.Forms.Label lblEstado;
         private System.Windows.Forms.ComboBox cmbEstado;
+        private System.Windows.Forms.TextBox txtCPF;
+        private System.Windows.Forms.Label lblCPF;
     }
 }
 
