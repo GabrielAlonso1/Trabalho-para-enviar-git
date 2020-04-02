@@ -36,6 +36,10 @@
             this.rdoFeminino = new System.Windows.Forms.RadioButton();
             this.btnSalvar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.lblTelefone = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.lblDataNascimento = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblNome
@@ -73,7 +77,7 @@
             // rdoMasculino
             // 
             this.rdoMasculino.AutoSize = true;
-            this.rdoMasculino.Location = new System.Drawing.Point(105, 89);
+            this.rdoMasculino.Location = new System.Drawing.Point(105, 143);
             this.rdoMasculino.Name = "rdoMasculino";
             this.rdoMasculino.Size = new System.Drawing.Size(73, 17);
             this.rdoMasculino.TabIndex = 4;
@@ -84,7 +88,7 @@
             // rdoFeminino
             // 
             this.rdoFeminino.AutoSize = true;
-            this.rdoFeminino.Location = new System.Drawing.Point(184, 89);
+            this.rdoFeminino.Location = new System.Drawing.Point(206, 143);
             this.rdoFeminino.Name = "rdoFeminino";
             this.rdoFeminino.Size = new System.Drawing.Size(67, 17);
             this.rdoFeminino.TabIndex = 5;
@@ -100,6 +104,7 @@
             this.btnSalvar.TabIndex = 6;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // btnCancelar
             // 
@@ -111,11 +116,47 @@
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(105, 103);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(168, 20);
+            this.textBox1.TabIndex = 9;
+            // 
+            // lblTelefone
+            // 
+            this.lblTelefone.AutoSize = true;
+            this.lblTelefone.Location = new System.Drawing.Point(102, 87);
+            this.lblTelefone.Name = "lblTelefone";
+            this.lblTelefone.Size = new System.Drawing.Size(49, 13);
+            this.lblTelefone.TabIndex = 8;
+            this.lblTelefone.Text = "Telefone";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(290, 103);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(168, 20);
+            this.textBox2.TabIndex = 11;
+            // 
+            // lblDataNascimento
+            // 
+            this.lblDataNascimento.AutoSize = true;
+            this.lblDataNascimento.Location = new System.Drawing.Point(287, 87);
+            this.lblDataNascimento.Name = "lblDataNascimento";
+            this.lblDataNascimento.Size = new System.Drawing.Size(104, 13);
+            this.lblDataNascimento.TabIndex = 10;
+            this.lblDataNascimento.Text = "Data de Nascimento";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.lblDataNascimento);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.lblTelefone);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.rdoFeminino);
@@ -141,6 +182,10 @@
         private System.Windows.Forms.RadioButton rdoFeminino;
         private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label lblTelefone;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label lblDataNascimento;
     }
 }
 

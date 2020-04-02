@@ -22,5 +22,11 @@ namespace trabalho1
             txtNome.Text = "";
             txtSobrenome.Text = "";
         }
+
+        private void btnSalvar_Click(object sender, EventArgs e)
+        {
+            String nome = txtNome.Text;
+            String sobrenome = txtSobrenome.Text;
+        }
     }
 }
