@@ -43,6 +43,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.rdoMoto = new System.Windows.Forms.RadioButton();
             this.rdoCarro = new System.Windows.Forms.RadioButton();
+            this.lblEstado = new System.Windows.Forms.Label();
+            this.cmbEstado = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -81,7 +83,7 @@
             // rdoMasculino
             // 
             this.rdoMasculino.AutoSize = true;
-            this.rdoMasculino.Location = new System.Drawing.Point(105, 143);
+            this.rdoMasculino.Location = new System.Drawing.Point(107, 176);
             this.rdoMasculino.Name = "rdoMasculino";
             this.rdoMasculino.Size = new System.Drawing.Size(73, 17);
             this.rdoMasculino.TabIndex = 4;
@@ -92,7 +94,7 @@
             // rdoFeminino
             // 
             this.rdoFeminino.AutoSize = true;
-            this.rdoFeminino.Location = new System.Drawing.Point(206, 143);
+            this.rdoFeminino.Location = new System.Drawing.Point(208, 176);
             this.rdoFeminino.Name = "rdoFeminino";
             this.rdoFeminino.Size = new System.Drawing.Size(67, 17);
             this.rdoFeminino.TabIndex = 5;
@@ -156,7 +158,7 @@
             // 
             this.panel1.Controls.Add(this.rdoMoto);
             this.panel1.Controls.Add(this.rdoCarro);
-            this.panel1.Location = new System.Drawing.Point(103, 166);
+            this.panel1.Location = new System.Drawing.Point(105, 199);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(168, 25);
             this.panel1.TabIndex = 12;
@@ -183,11 +185,59 @@
             this.rdoCarro.Text = "Carro";
             this.rdoCarro.UseVisualStyleBackColor = true;
             // 
+            // lblEstado
+            // 
+            this.lblEstado.AutoSize = true;
+            this.lblEstado.Location = new System.Drawing.Point(102, 126);
+            this.lblEstado.Name = "lblEstado";
+            this.lblEstado.Size = new System.Drawing.Size(40, 13);
+            this.lblEstado.TabIndex = 13;
+            this.lblEstado.Text = "Estado";
+            // 
+            // cmbEstado
+            // 
+            this.cmbEstado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbEstado.FormattingEnabled = true;
+            this.cmbEstado.Items.AddRange(new object[] {
+            "Acre (AC)",
+            "Alagoas (AL)",
+            "Amapá (AP)",
+            "Amazonas (AM)",
+            "Bahia (BA)",
+            "Ceará (CE)",
+            "Distrito Federal (DF)",
+            "Espírito Santo (ES)",
+            "Goiás (GO)",
+            "Maranhão (MA)",
+            "Mato Grosso (MT)",
+            "Mato Grosso do Sul (MS)",
+            "Minas Gerais (MG)",
+            "Pará (PA)",
+            "Paraíba (PB)",
+            "Paraná (PR)",
+            "Pernambuco (PE)",
+            "Piauí (PI)",
+            "Rio de Janeiro (RJ)",
+            "Rio Grande do Norte (RN)",
+            "Rio Grande do Sul (RS)",
+            "Rondônia (RO)",
+            "Roraima (RR)",
+            "Santa Catarina (SC)",
+            "São Paulo (SP)",
+            "Sergipe (SE)",
+            "Tocantins (TO)"});
+            this.cmbEstado.Location = new System.Drawing.Point(105, 142);
+            this.cmbEstado.Name = "cmbEstado";
+            this.cmbEstado.Size = new System.Drawing.Size(168, 21);
+            this.cmbEstado.TabIndex = 14;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.cmbEstado);
+            this.Controls.Add(this.lblEstado);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.txtDataNascimento);
             this.Controls.Add(this.lblDataNascimento);
@@ -227,6 +277,8 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.RadioButton rdoMoto;
         private System.Windows.Forms.RadioButton rdoCarro;
+        private System.Windows.Forms.Label lblEstado;
+        private System.Windows.Forms.ComboBox cmbEstado;
     }
 }
 

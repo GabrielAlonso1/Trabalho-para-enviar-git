@@ -27,7 +27,7 @@ namespace trabalho1
             rdoMasculino.Text = "";
             rdoCarro.Text = "";
             rdoMoto.Text = "";
-
+            cmbEstado.SelectedIndex = -1;
         }
 
         private void btnSalvar_Click(object sender, EventArgs e)
@@ -40,6 +40,7 @@ namespace trabalho1
             String Feminino = rdoFeminino.Text;
             String Carro = rdoCarro.Text;
             String Moto = rdoMoto.Text;
+            String Estado = cmbEstado.GetItemText(cmbEstado.SelectedItem);
         }
     }
 }
