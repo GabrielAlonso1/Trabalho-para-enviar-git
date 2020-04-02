@@ -40,6 +40,10 @@
             this.lblTelefone = new System.Windows.Forms.Label();
             this.txtDataNascimento = new System.Windows.Forms.TextBox();
             this.lblDataNascimento = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.rdoMoto = new System.Windows.Forms.RadioButton();
+            this.rdoCarro = new System.Windows.Forms.RadioButton();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblNome
@@ -148,11 +152,43 @@
             this.lblDataNascimento.TabIndex = 10;
             this.lblDataNascimento.Text = "Data de Nascimento";
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.rdoMoto);
+            this.panel1.Controls.Add(this.rdoCarro);
+            this.panel1.Location = new System.Drawing.Point(103, 166);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(168, 25);
+            this.panel1.TabIndex = 12;
+            // 
+            // rdoMoto
+            // 
+            this.rdoMoto.AutoSize = true;
+            this.rdoMoto.Location = new System.Drawing.Point(104, 4);
+            this.rdoMoto.Name = "rdoMoto";
+            this.rdoMoto.Size = new System.Drawing.Size(49, 17);
+            this.rdoMoto.TabIndex = 14;
+            this.rdoMoto.TabStop = true;
+            this.rdoMoto.Text = "Moto";
+            this.rdoMoto.UseVisualStyleBackColor = true;
+            // 
+            // rdoCarro
+            // 
+            this.rdoCarro.AutoSize = true;
+            this.rdoCarro.Location = new System.Drawing.Point(3, 4);
+            this.rdoCarro.Name = "rdoCarro";
+            this.rdoCarro.Size = new System.Drawing.Size(50, 17);
+            this.rdoCarro.TabIndex = 13;
+            this.rdoCarro.TabStop = true;
+            this.rdoCarro.Text = "Carro";
+            this.rdoCarro.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.txtDataNascimento);
             this.Controls.Add(this.lblDataNascimento);
             this.Controls.Add(this.txtTelefone);
@@ -167,6 +203,8 @@
             this.Controls.Add(this.lblNome);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -186,6 +224,9 @@
         private System.Windows.Forms.Label lblTelefone;
         private System.Windows.Forms.TextBox txtDataNascimento;
         private System.Windows.Forms.Label lblDataNascimento;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.RadioButton rdoMoto;
+        private System.Windows.Forms.RadioButton rdoCarro;
     }
 }
 

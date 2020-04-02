@@ -25,6 +25,9 @@ namespace trabalho1
             txtTelefone.Text = "";
             rdoFeminino.Text = "";
             rdoMasculino.Text = "";
+            rdoCarro.Text = "";
+            rdoMoto.Text = "";
+
         }
 
         private void btnSalvar_Click(object sender, EventArgs e)
@@ -35,6 +38,8 @@ namespace trabalho1
             String DataNascimento = txtDataNascimento.Text;
             String Masculino = rdoMasculino.Text;
             String Feminino = rdoFeminino.Text;
+            String Carro = rdoCarro.Text;
+            String Moto = rdoMoto.Text;
         }
     }
 }
