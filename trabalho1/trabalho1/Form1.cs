@@ -23,10 +23,10 @@ namespace trabalho1
             txtSobrenome.Text = "";
             txtDataNascimento.Text = "";
             txtTelefone.Text = "";
-            rdoFeminino.Text = "";
-            rdoMasculino.Text = "";
-            rdoCarro.Text = "";
-            rdoMoto.Text = "";
+            rdoFeminino.Checked = false;
+            rdoMasculino.Checked = false;
+            rdoCarro.Checked = false;    
+            rdoMoto.Checked = false;
             cmbEstado.SelectedIndex = -1;
             txtCPF.Text = "";
         }

@@ -32,8 +32,6 @@
             this.lblSobrenome = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.txtSobrenome = new System.Windows.Forms.TextBox();
-            this.rdoMasculino = new System.Windows.Forms.RadioButton();
-            this.rdoFeminino = new System.Windows.Forms.RadioButton();
             this.btnSalvar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.txtTelefone = new System.Windows.Forms.TextBox();
@@ -47,7 +45,11 @@
             this.cmbEstado = new System.Windows.Forms.ComboBox();
             this.txtCPF = new System.Windows.Forms.TextBox();
             this.lblCPF = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.rdoMasculino = new System.Windows.Forms.RadioButton();
+            this.rdoFeminino = new System.Windows.Forms.RadioButton();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblNome
@@ -81,28 +83,6 @@
             this.txtSobrenome.Name = "txtSobrenome";
             this.txtSobrenome.Size = new System.Drawing.Size(168, 20);
             this.txtSobrenome.TabIndex = 3;
-            // 
-            // rdoMasculino
-            // 
-            this.rdoMasculino.AutoSize = true;
-            this.rdoMasculino.Location = new System.Drawing.Point(107, 176);
-            this.rdoMasculino.Name = "rdoMasculino";
-            this.rdoMasculino.Size = new System.Drawing.Size(73, 17);
-            this.rdoMasculino.TabIndex = 4;
-            this.rdoMasculino.TabStop = true;
-            this.rdoMasculino.Text = "Masculino";
-            this.rdoMasculino.UseVisualStyleBackColor = true;
-            // 
-            // rdoFeminino
-            // 
-            this.rdoFeminino.AutoSize = true;
-            this.rdoFeminino.Location = new System.Drawing.Point(208, 176);
-            this.rdoFeminino.Name = "rdoFeminino";
-            this.rdoFeminino.Size = new System.Drawing.Size(67, 17);
-            this.rdoFeminino.TabIndex = 5;
-            this.rdoFeminino.TabStop = true;
-            this.rdoFeminino.Text = "Feminino";
-            this.rdoFeminino.UseVisualStyleBackColor = true;
             // 
             // btnSalvar
             // 
@@ -168,7 +148,7 @@
             // rdoMoto
             // 
             this.rdoMoto.AutoSize = true;
-            this.rdoMoto.Location = new System.Drawing.Point(104, 4);
+            this.rdoMoto.Location = new System.Drawing.Point(98, 4);
             this.rdoMoto.Name = "rdoMoto";
             this.rdoMoto.Size = new System.Drawing.Size(49, 17);
             this.rdoMoto.TabIndex = 14;
@@ -179,7 +159,7 @@
             // rdoCarro
             // 
             this.rdoCarro.AutoSize = true;
-            this.rdoCarro.Location = new System.Drawing.Point(3, 4);
+            this.rdoCarro.Location = new System.Drawing.Point(4, 4);
             this.rdoCarro.Name = "rdoCarro";
             this.rdoCarro.Size = new System.Drawing.Size(50, 17);
             this.rdoCarro.TabIndex = 13;
@@ -249,11 +229,43 @@
             this.lblCPF.TabIndex = 15;
             this.lblCPF.Text = "CPF";
             // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.rdoFeminino);
+            this.panel2.Controls.Add(this.rdoMasculino);
+            this.panel2.Location = new System.Drawing.Point(105, 169);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(168, 28);
+            this.panel2.TabIndex = 17;
+            // 
+            // rdoMasculino
+            // 
+            this.rdoMasculino.AutoSize = true;
+            this.rdoMasculino.Location = new System.Drawing.Point(4, 4);
+            this.rdoMasculino.Name = "rdoMasculino";
+            this.rdoMasculino.Size = new System.Drawing.Size(73, 17);
+            this.rdoMasculino.TabIndex = 18;
+            this.rdoMasculino.TabStop = true;
+            this.rdoMasculino.Text = "Masculino";
+            this.rdoMasculino.UseVisualStyleBackColor = true;
+            // 
+            // rdoFeminino
+            // 
+            this.rdoFeminino.AutoSize = true;
+            this.rdoFeminino.Location = new System.Drawing.Point(98, 5);
+            this.rdoFeminino.Name = "rdoFeminino";
+            this.rdoFeminino.Size = new System.Drawing.Size(67, 17);
+            this.rdoFeminino.TabIndex = 19;
+            this.rdoFeminino.TabStop = true;
+            this.rdoFeminino.Text = "Feminino";
+            this.rdoFeminino.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.txtCPF);
             this.Controls.Add(this.lblCPF);
             this.Controls.Add(this.cmbEstado);
@@ -265,8 +277,6 @@
             this.Controls.Add(this.lblTelefone);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnSalvar);
-            this.Controls.Add(this.rdoFeminino);
-            this.Controls.Add(this.rdoMasculino);
             this.Controls.Add(this.txtSobrenome);
             this.Controls.Add(this.txtNome);
             this.Controls.Add(this.lblSobrenome);
@@ -275,6 +285,8 @@
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -286,8 +298,6 @@
         private System.Windows.Forms.Label lblSobrenome;
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.TextBox txtSobrenome;
-        private System.Windows.Forms.RadioButton rdoMasculino;
-        private System.Windows.Forms.RadioButton rdoFeminino;
         private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.TextBox txtTelefone;
@@ -301,6 +311,9 @@
         private System.Windows.Forms.ComboBox cmbEstado;
         private System.Windows.Forms.TextBox txtCPF;
         private System.Windows.Forms.Label lblCPF;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.RadioButton rdoMasculino;
+        private System.Windows.Forms.RadioButton rdoFeminino;
     }
 }
 
