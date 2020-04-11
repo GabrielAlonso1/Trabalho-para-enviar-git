@@ -43,6 +43,12 @@ namespace trabalho1
             String Moto = rdoMoto.Text;
             String Estado = cmbEstado.GetItemText(cmbEstado.SelectedItem);
             String CPF = txtCPF.Text;
+            MessageBox.Show("Nome: " + nome +
+                             ", Sobrenome: " + sobrenome +
+                             ", Telefone: " + telefone +
+                             ", Data de Nascimento: " + DataNascimento +
+                             ", Estado: " + Estado +
+                             ", CPF: " + CPF);
         }
     }
 }

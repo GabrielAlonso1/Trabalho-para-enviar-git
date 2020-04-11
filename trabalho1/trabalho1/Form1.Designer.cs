@@ -46,8 +46,8 @@
             this.txtCPF = new System.Windows.Forms.TextBox();
             this.lblCPF = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.rdoMasculino = new System.Windows.Forms.RadioButton();
             this.rdoFeminino = new System.Windows.Forms.RadioButton();
+            this.rdoMasculino = new System.Windows.Forms.RadioButton();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -238,17 +238,6 @@
             this.panel2.Size = new System.Drawing.Size(168, 28);
             this.panel2.TabIndex = 17;
             // 
-            // rdoMasculino
-            // 
-            this.rdoMasculino.AutoSize = true;
-            this.rdoMasculino.Location = new System.Drawing.Point(4, 4);
-            this.rdoMasculino.Name = "rdoMasculino";
-            this.rdoMasculino.Size = new System.Drawing.Size(73, 17);
-            this.rdoMasculino.TabIndex = 18;
-            this.rdoMasculino.TabStop = true;
-            this.rdoMasculino.Text = "Masculino";
-            this.rdoMasculino.UseVisualStyleBackColor = true;
-            // 
             // rdoFeminino
             // 
             this.rdoFeminino.AutoSize = true;
@@ -259,6 +248,17 @@
             this.rdoFeminino.TabStop = true;
             this.rdoFeminino.Text = "Feminino";
             this.rdoFeminino.UseVisualStyleBackColor = true;
+            // 
+            // rdoMasculino
+            // 
+            this.rdoMasculino.AutoSize = true;
+            this.rdoMasculino.Location = new System.Drawing.Point(4, 4);
+            this.rdoMasculino.Name = "rdoMasculino";
+            this.rdoMasculino.Size = new System.Drawing.Size(73, 17);
+            this.rdoMasculino.TabIndex = 18;
+            this.rdoMasculino.TabStop = true;
+            this.rdoMasculino.Text = "Masculino";
+            this.rdoMasculino.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -282,7 +282,8 @@
             this.Controls.Add(this.lblSobrenome);
             this.Controls.Add(this.lblNome);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Cadastro";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
