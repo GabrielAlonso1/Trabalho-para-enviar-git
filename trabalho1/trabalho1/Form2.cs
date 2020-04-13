@@ -19,18 +19,19 @@ namespace trabalho1
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            txtUser.Text = "";
+            txtPassword.Text = "";
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            if (txtEmailLogin.Text == "" || txtPassword.Text == "")
+            if (txtUser.Text == "" || txtPassword.Text == "")
             {
                 MessageBox.Show("Campos obrigatórios");
             }
             else 
             {
-                if (txtEmailLogin.Text == "gabriel" && txtPassword.Text == "1234")
+                if (txtUser.Text == "gabriel" && txtPassword.Text == "1234")
                 {
                    Form1 frm = new Form1();
                     frm.Show();

@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.label2 = new System.Windows.Forms.Label();
-            this.txtEmailLogin = new System.Windows.Forms.TextBox();
+            this.txtUser = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.btnLogin = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
@@ -56,15 +56,15 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Password";
             // 
-            // txtEmailLogin
+            // txtUser
             // 
-            this.txtEmailLogin.BackColor = System.Drawing.Color.Purple;
-            this.txtEmailLogin.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtEmailLogin.ForeColor = System.Drawing.Color.White;
-            this.txtEmailLogin.Location = new System.Drawing.Point(51, 133);
-            this.txtEmailLogin.Name = "txtEmailLogin";
-            this.txtEmailLogin.Size = new System.Drawing.Size(178, 13);
-            this.txtEmailLogin.TabIndex = 2;
+            this.txtUser.BackColor = System.Drawing.Color.Purple;
+            this.txtUser.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtUser.ForeColor = System.Drawing.Color.White;
+            this.txtUser.Location = new System.Drawing.Point(51, 133);
+            this.txtUser.Name = "txtUser";
+            this.txtUser.Size = new System.Drawing.Size(178, 13);
+            this.txtUser.TabIndex = 2;
             // 
             // txtPassword
             // 
@@ -75,11 +75,12 @@
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(178, 13);
             this.txtPassword.TabIndex = 3;
+            this.txtPassword.UseSystemPasswordChar = true;
             this.txtPassword.TextChanged += new System.EventHandler(this.txtPassword_TextChanged);
             // 
             // btnLogin
             // 
-            this.btnLogin.Location = new System.Drawing.Point(49, 258);
+            this.btnLogin.Location = new System.Drawing.Point(129, 258);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(75, 23);
             this.btnLogin.TabIndex = 4;
@@ -89,7 +90,7 @@
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(130, 258);
+            this.btnCancelar.Location = new System.Drawing.Point(48, 258);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(75, 23);
             this.btnCancelar.TabIndex = 5;
@@ -179,7 +180,7 @@
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.txtPassword);
-            this.Controls.Add(this.txtEmailLogin);
+            this.Controls.Add(this.txtUser);
             this.Controls.Add(this.label2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
@@ -197,7 +198,7 @@
 
         #endregion
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtEmailLogin;
+        private System.Windows.Forms.TextBox txtUser;
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Button btnCancelar;
